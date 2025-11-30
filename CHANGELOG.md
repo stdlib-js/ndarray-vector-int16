@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-11)
+## Unreleased (2025-11-30)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`dbfa538`](https://github.com/stdlib-js/stdlib/commit/dbfa538b304e97ac92eed25a73418f5f378b33e7) - **docs:** fix example code in TSDoc declaration comments _(by Philipp Burckhardt)_
 -   [`ea3f7af`](https://github.com/stdlib-js/stdlib/commit/ea3f7afc1eed9b9d6c7964b8e984dd1e205bcd24) - **feat:** add `ndarray/vector/int16` _(by Athan Reines)_
 
 </details>
@@ -34,9 +35,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Philipp Burckhardt
 
 </section>
 
