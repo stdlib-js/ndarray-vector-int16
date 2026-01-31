@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import Int16Vector from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-vector-int16@deno/mod.js';
+import Int16Vector from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-vector-int16@v0.1.0-deno/mod.js';
 ```
 
 #### Int16Vector( \[options] )
@@ -156,7 +156,7 @@ var len3 = numel( arr3 );
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@deno/mod.js';
 import sum from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-sum@deno/mod.js';
 import map from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-map@deno/mod.js';
-import Int16Vector from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-vector-int16@deno/mod.js';
+import Int16Vector from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-vector-int16@v0.1.0-deno/mod.js';
 
 // Create a vector containing random values:
 var x = new Int16Vector( discreteUniform( 10, 0, 100 ) );
