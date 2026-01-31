@@ -54,6 +54,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+Int16Vector = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-vector-int16@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray-vector-int16/tags). For example,
+
+```javascript
 Int16Vector = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-vector-int16@v0.1.0-umd/browser.js' )
 ```
 
@@ -66,7 +71,7 @@ var Int16Vector = require( 'path/to/vendor/umd/ndarray-vector-int16/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-vector-int16@v0.1.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-vector-int16@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -183,7 +188,7 @@ var len3 = numel( arr3 );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-sum@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-map@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-vector-int16@v0.1.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-vector-int16@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
