@@ -45,19 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-vector-int16
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import Int16Vector from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-vector-int16@esm/index.mjs';
-```
-The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray-vector-int16/tags). For example,
-
-```javascript
-import Int16Vector from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-vector-int16@v0.1.0-esm/index.mjs';
+var Int16Vector = require( '@stdlib/ndarray-vector-int16' );
 ```
 
 #### Int16Vector( \[options] )
@@ -65,7 +78,7 @@ import Int16Vector from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-vector-in
 Returns a one-dimensional signed 16-bit integer [ndarray][@stdlib/ndarray/ctor].
 
 ```javascript
-import numel from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-numel@esm/index.mjs';
+var numel = require( '@stdlib/ndarray-numel' );
 
 var arr = new Int16Vector();
 // returns <ndarray>
@@ -85,7 +98,7 @@ The function accepts the following options:
 Returns a one-dimensional signed 16-bit integer [ndarray][@stdlib/ndarray/ctor] having a specified `length`.
 
 ```javascript
-import numel from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-numel@esm/index.mjs';
+var numel = require( '@stdlib/ndarray-numel' );
 
 var arr = new Int16Vector( 5 );
 // returns <ndarray>
@@ -99,7 +112,7 @@ var len1 = numel( arr );
 Creates a one-dimensional signed 16-bit integer [ndarray][@stdlib/ndarray/ctor] from an array-like object or iterable.
 
 ```javascript
-import numel from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-numel@esm/index.mjs';
+var numel = require( '@stdlib/ndarray-numel' );
 
 var arr = new Int16Vector( [ 1, 2, 3 ] );
 // returns <ndarray>
@@ -113,8 +126,8 @@ var len1 = numel( arr );
 Returns a one-dimensional signed 16-bit integer [ndarray][@stdlib/ndarray/ctor] view of an [`ArrayBuffer`][@stdlib/array/buffer].
 
 ```javascript
-import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@esm/index.mjs';
-import numel from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-numel@esm/index.mjs';
+var ArrayBuffer = require( '@stdlib/array-buffer' );
+var numel = require( '@stdlib/ndarray-numel' );
 
 var buf = new ArrayBuffer( 32 );
 
@@ -157,16 +170,11 @@ var len3 = numel( arr3 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
-import sum from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-sum@esm/index.mjs';
-import map from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-map@esm/index.mjs';
-import Int16Vector from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-vector-int16@esm/index.mjs';
+```javascript
+var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
+var sum = require( '@stdlib/blas-ext-sum' );
+var map = require( '@stdlib/ndarray-map' );
+var Int16Vector = require( '@stdlib/ndarray-vector-int16' );
 
 // Create a vector containing random values:
 var x = new Int16Vector( discreteUniform( 10, 0, 100 ) );
@@ -186,10 +194,6 @@ var y = map( x, threshold );
 // Recompute the sum:
 v = sum( y );
 console.log( v.get() );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -221,7 +225,7 @@ console.log( v.get() );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -251,8 +255,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/ndarray-vector-int16.svg
 [npm-url]: https://npmjs.org/package/@stdlib/ndarray-vector-int16
 
-[test-image]: https://github.com/stdlib-js/ndarray-vector-int16/actions/workflows/test.yml/badge.svg?branch=v0.1.0
-[test-url]: https://github.com/stdlib-js/ndarray-vector-int16/actions/workflows/test.yml?query=branch:v0.1.0
+[test-image]: https://github.com/stdlib-js/ndarray-vector-int16/actions/workflows/test.yml/badge.svg?branch=v0.1.1
+[test-url]: https://github.com/stdlib-js/ndarray-vector-int16/actions/workflows/test.yml?query=branch:v0.1.1
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/ndarray-vector-int16/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/ndarray-vector-int16?branch=main
@@ -284,9 +288,9 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-vector-int16/main/LICENSE
 
-[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer/tree/esm
+[@stdlib/array/buffer]: https://github.com/stdlib-js/array-buffer
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/esm
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
 </section>
 
